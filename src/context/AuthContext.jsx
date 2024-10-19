@@ -30,11 +30,7 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const login = async (email, password) => {
-    const res = await axios.post(
-      '/user/login',
-      { email, password },
-      { withCredentials: true }
-    );
+    const res = await axios.post('/user/login', { email, password });
     if (res.status !== 200) {
       throw new Error('Unable to login');
     }
