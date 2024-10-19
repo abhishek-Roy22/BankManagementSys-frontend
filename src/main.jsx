@@ -7,7 +7,7 @@ import axios from 'axios';
 import { AuthProvider } from './context/AuthContext.jsx';
 import { Toaster } from 'react-hot-toast';
 
-axios.defaults.baseURL = 'https://your-backend.vercel.app'; // http://localhost://8000
+axios.defaults.baseURL = 'https://bank-management-sys-backend.vercel.app/'; // http://localhost://8000
 axios.defaults.withCredentials = true;
 
 createRoot(document.getElementById('root')).render(
