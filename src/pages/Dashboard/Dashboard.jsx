@@ -19,7 +19,6 @@ const Dashboard = () => {
     getAccounts();
   }, []);
 
-  console.log(accounts);
   return (
     <div className="dashboard">
       <h1>Dashboard</h1>
