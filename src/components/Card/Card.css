@@ -1,0 +1,55 @@
+.cardContainer {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.bName {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bankName {
+  font-weight: bold;
+}
+
+.bank {
+  width: fit-content;
+  background-color: blue;
+  color: white;
+  border-radius: 2px;
+  border: none;
+  padding: 4px;
+}
+
+.aName {
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #555;
+}
+
+.edit {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: blue;
+  background-color: lightblue;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+.remove {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: red;
+  background-color: lightcoral;
+  padding: 4px;
+  border-radius: 2px;
+}

@@ -1,0 +1,53 @@
+.signin {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signinTitle {
+  position: absolute;
+  top: 70px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.signin form {
+  max-width: 620px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 30px 20px;
+  border-radius: 5px;
+}
+
+form label {
+  color: #555;
+  font-weight: 400;
+  padding: 5px 0px;
+}
+
+form input {
+  padding: 12px 10px;
+  outline: none;
+  border: 2px solid #555;
+  border-radius: 5px;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+
+form button {
+  padding: 10px;
+  outline: none;
+  border: 1px solid #555;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+}

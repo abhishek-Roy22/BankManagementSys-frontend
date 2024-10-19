@@ -1,0 +1,62 @@
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: antiquewhite;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+
+nav .profileContainer {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.profileContainer .profile {
+  cursor: pointer;
+  padding: 8px 6px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+}
+
+.profileContainer .model {
+  position: absolute;
+  top: 50px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px 8px;
+  z-index: 999;
+  width: fit-content;
+  height: 50px;
+}
+
+.model .logout {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.authBtn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.authBtn button {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px 8px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
