@@ -12,8 +12,8 @@ const Home = () => {
 
   useEffect(() => {
     const fetchAccount = async () => {
-      const { data } = await axios.get('/bank');
-      setAccounts(data.bankAccounts);
+      const res = await axios.get('/bank');
+      setAccounts(res.data.bankAccounts);
     };
     fetchAccount();
   }, []);
