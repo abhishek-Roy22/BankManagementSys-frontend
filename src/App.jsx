@@ -6,6 +6,7 @@ import Signin from './pages/Signin/Signin';
 import Login from './pages/Login/Login';
 import Dashboard from './pages/Dashboard/Dashboard';
 import EditAccount from './components/EditAccount/EditAccount';
+import PrivateRoute from './components/PrivateRoute';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/isAdmin" element={<Dashboard />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<PrivateRoute element={<Home />} />} />
         <Route path="/account/:id" element={<EditAccount />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/login" element={<Login />} />

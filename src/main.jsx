@@ -7,7 +7,7 @@ import axios from 'axios';
 import { AuthProvider } from './context/AuthContext.jsx';
 import { Toaster } from 'react-hot-toast';
 
-axios.defaults.baseURL = 'http://localhost:8000';
+axios.defaults.baseURL = 'http://localhost:8000'; // change in production
 axios.defaults.withCredentials = true;
 
 createRoot(document.getElementById('root')).render(

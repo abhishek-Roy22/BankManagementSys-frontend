@@ -5,17 +5,22 @@ import { useEffect, useState } from 'react';
 import BankForm from '../../components/BankForm/BankForm';
 import axios from 'axios';
 import Card from '../../components/Card/Card';
+import toast from 'react-hot-toast';
 
 const Home = () => {
   const [open, setOpen] = useState(false);
   const [accounts, setAccounts] = useState([]);
 
   useEffect(() => {
-    const fetchAccount = async () => {
-      const { data } = await axios.get('/bank');
-      setAccounts(data.bankAccounts);
-    };
-    fetchAccount();
+    try {
+      const fetchAccount = async () => {
+        const { data } = await axios.get('/bank');
+        setAccounts(data.bankAccounts);
+      };
+      fetchAccount();
+    } catch (error) {
+      toast.error(`${error.message}`);
+    }
   }, []);
 
   return (
